@@ -1,0 +1,31 @@
+<?xml version="1.0" ?>
+<widget>
+    <youtube type="vl_worker/youtube">
+        <name>Youtube widget</name>
+        <description>Inserts a YouTube Video</description>
+        <parameters>
+            <video_id translate="label">
+                <label>Video ID</label>
+                <type>text</type>
+                <required>1</required>
+                <visible >1</visible>
+            </video_id>
+            <template translate="label">
+                <label>Template</label>
+                <visible>1</visible>
+                <required>1</required>
+                <type>select</type>
+                <values>
+                    <as_video translate="label">
+                        <value>video.phtml</value>
+                        <label>Embedded Video</label>
+                    </as_video>
+                    <as_link translate="label">
+                        <value>link.phtml</value>
+                        <label>Hyperlink to Youtube</label>
+                    </as_link>
+                </values>
+            </template>
+        </parameters>
+    </youtube>
+</widget>
