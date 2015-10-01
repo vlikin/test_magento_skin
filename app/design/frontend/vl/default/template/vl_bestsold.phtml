@@ -1,0 +1,3 @@
+<?php foreach ($this->getBestsellerProducts()->getItems() as $id => $product): ?>
+    <a href="<?php echo $product->getProductUrl() ?>"><?php echo $product->getName()?></a>
+<?php endforeach ?>

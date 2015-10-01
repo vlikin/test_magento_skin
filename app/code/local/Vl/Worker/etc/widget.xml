@@ -28,4 +28,22 @@
             </template>
         </parameters>
     </youtube>
+    <bestsold type="vl_worker/bestsold">
+        <name>Best sold products</name>
+        <description>Displays links of the best sold products.</description>
+        <parameters>
+            <template>
+                <label>Template</label>
+                <visible>1</visible>
+                <required>1</required>
+                <type>select</type>
+                <values>
+                    <default translate="label">
+                        <value>vl_bestsold.phtml</value>
+                        <label>Best sold products</label>
+                    </default>
+                </values>
+            </template>
+        </parameters>
+    </bestsold>
 </widget>
