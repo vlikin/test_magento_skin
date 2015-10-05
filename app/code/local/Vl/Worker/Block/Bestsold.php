@@ -15,9 +15,9 @@ class Vl_Worker_Block_Bestsold extends Mage_Core_Block_Template implements Mage_
         $collection = Mage::getResourceModel('catalog/product_collection')
             ->addAttributeToSelect(Mage::getSingleton('catalog/config')->getProductAttributes())
             ->addStoreFilter()
-            ->addPriceData()
-            ->addTaxPercents()
-            ->addUrlRewrite()
+            //->addPriceData()
+            //->addTaxPercents()
+            //->addUrlRewrite()
             ->setPageSize(6);
 
         $collection->getSelect()
